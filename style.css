@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    background-color: rgb(219, 238, 208);
+}
+
+.highway{
+    margin-top: 400px;
+}
+
+.car{
+    z-index: 2;
+    margin-top: 20px;
+    width: 200px;
+    height: 80px;
+    position: relative;
+    background-color: brown;
+    animation: carmove 20s infinite;
+    cursor: pointer;
+}
+
+.car-name{
+    top: 12px;
+    left: 20px;
+    font-size: 2.8rem;
+    letter-spacing: 8px;
+    position: absolute;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.driver{
+    width: 40px;
+    height: 60px;
+    background-color: white;
+    transform: translate(200px, 10px);
+    border-radius: 0 4px 4px 0;
+}
+
+.b-light{
+    width: 5px;
+    height: 10px;
+    background-color: red;
+}
+
+#b-light1{
+    position: relative;
+    top: -60px;
+}
+
+.h-light img{
+    z-index: -1;
+    width: 50px;
+    height: 200px;
+    transform: rotate(-90deg);
+    top: -156px;
+    left: 300px;
+    position: relative;
+}
+
+#h-light2{
+    position: relative;
+    top: -170px;
+}
+
+.car:hover{
+    animation-play-state: paused;
+}
+
+@keyframes carmove {
+    from{left: 0px;}
+    to{left: 100%;}
+}
+
+.stripe{
+    width: 100vw;
+    height: 50px;
+    border-top: 5px dashed white;
+    transform: translatey(-140px);
+}
+
+.road{
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    transform: translateY(-90px);
+}
